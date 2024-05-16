@@ -1,6 +1,6 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 body, button{
@@ -17,10 +17,10 @@ body, button{
 
 .navbar{
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
-    z-index:10 ;
+    z-index: 10;
     height: 3rem;
 }
 .menu{
@@ -106,7 +106,7 @@ header{
     max-width: 35rem;
     text-align: center;
     color: rgb(255, 255, 255);
-    padding: 0 2 rem;
+    padding: 0 2rem;
 }
 .title{
     font-size: 2.4rem;
@@ -175,7 +175,7 @@ ul{
     padding: 0.7rem 0;
     display: inline-block;
     font-size: 1.3rem;
-    font-weight: 300 ;
+    font-weight: 300;
     letter-spacing: 1px;
     transition: 0.3s;
     opacity: 0;
@@ -218,23 +218,23 @@ ul{
     height: 100vh;
     top: 0;
     left: 0;
-    transform-style:preserve-3d ;
-    transform-origin:left ;
-    transition:0.5s ;
+    transform-style: preserve-3d;
+    transform-origin: left;
+    transition: 0.5s;
     background-color: white;
 }
 .shadow.one{
-    z-index: -1 ;
+    z-index: -1;
     opacity: 0.15;
 }
 .shadow.two{
-    z-index: -2 ;
+    z-index: -2;
     opacity: 0.1;
 
 }
 .background.active .shadow.one{
     animation: shadow-one 0.6s ease-out;
-    transform:  perspective(1400px) rotateY(20deg) translateZ(215px) scale(0.5) ;
+    transform:  perspective(1400px) rotateY(20deg) translateZ(215px) scale(0.5);
 }
 @keyframes shadow-one{
     0%{
