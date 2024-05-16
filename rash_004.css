@@ -7,7 +7,7 @@ body, button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .background{
-    background-image: linear-gradient(135deg, #455261 0%, #11253b 74%) ;
+    background-image: linear-gradient(135deg, #571144 5%, #112e4f  74%); 
     min-height:100vh;
     background-color: #1c446e;
     background-repeat: no-repeat;
@@ -21,7 +21,10 @@ body, button{
     left: 0;
     width: 100%;
     z-index: 10;
-    height: 3rem;
+    height: 4rem;
+}
+.navbar.scrolled{
+    background: linear-gradient(135deg, #571144 5%, #112e4f 74%);
 }
 .menu{
     max-width: 72rem;
@@ -48,6 +51,7 @@ body, button{
     align-items: center;
     justify-content:flex-end ;
     align-items: center;
+    right: 1rem;
 
 
 }
@@ -156,15 +160,16 @@ button:hover{
 
 
 .links{
-    position: absolute;
+    position: fixed;
     width: 30%;
     right: 0;
     top: 0;
     height: 100vh;
-    z-index: 2;
+    z-index: 5;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+
 }
 ul{
     list-style: none;
@@ -172,7 +177,7 @@ ul{
 .links a{
     text-decoration: none;
     color: white;
-    padding: 0.7rem 0;
+    padding: 0.7rem 0 0.7rem 0.9rem;
     display: inline-block;
     font-size: 1.3rem;
     font-weight: 300;
@@ -181,6 +186,7 @@ ul{
     opacity: 0;
     transform: translateY(10px);
     animation: hide 0.5s forwards ease ;
+
 }
 .links a:hover{
     color: #888e92;
@@ -188,6 +194,11 @@ ul{
 
 .background.active .links a{
     animation: appear 0.5s forwards ease var(--i);
+
+}
+.background.active .links{
+    padding: 0 150px 0 10px;
+    background:  #2c2f58 74%;
 }
 
 @keyframes appear{
