@@ -268,3 +268,34 @@ ul{
 .background.active .main:hover {
     transform: perspective(1400px) rotateY(20deg) translateZ(340px) scale(0.5);
 }
+
+
+.about_me{
+    padding: 110px 50px 300px 60px;
+    margin: 20px;
+    display: flex;
+    color: white;
+}
+
+.background.active .about_me{
+    animation:appear 1s backwards ease var(--i);
+    width: 75%;
+    height: 100vh;
+}
+
+.bullet{
+    width: 0.5rem;
+    height: 1.8rem;
+    background-color: white;
+}
+.p1{
+    padding:0 10px;
+    margin: 0 20px;
+    line-height: 30px;
+}
+.image1{
+    display: contents;
+    padding: 20px;
+    margin: 10px;
+    background: linear-gradient( 90deg #221e3f 0%, #120510 74%);
+}
