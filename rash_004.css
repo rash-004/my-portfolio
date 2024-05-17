@@ -5,7 +5,13 @@
 }
 body, button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
+a{
+    text-decoration: none;
+    color: white;
+}
+
 .background{
     background-image: linear-gradient(135deg, #571144 5%, #112e4f  74%); 
     min-height:100vh;
@@ -50,7 +56,6 @@ body, button{
     display: flex;
     align-items: center;
     justify-content:flex-end ;
-    align-items: center;
     right: 1rem;
 
 
@@ -78,6 +83,7 @@ body, button{
 .bar:after{
     transform: translateY(9px);
 }
+
 
 .main{
     position: relative;
@@ -179,7 +185,7 @@ ul{
     color: white;
     padding: 0.7rem 0 0.7rem 0.9rem;
     display: inline-block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 300;
     letter-spacing: 1px;
     transition: 0.3s;
@@ -241,6 +247,7 @@ ul{
     opacity: 0.1;
 
 }
+
 .background.active .shadow.one{
     animation: shadow-one 0.6s ease-out;
     transform:  perspective(1400px) rotateY(20deg) translateZ(215px) scale(0.5);
@@ -282,31 +289,204 @@ ul{
 
 
 .about_me{
-    padding: 110px 50px 300px 60px;
+    padding: 110px 70px 100px 50px;
     margin: 20px;
-    display: flex;
-    color: white;
+    width: 100%;
+    height: auto;
 }
-
-.background.active .about_me{
+.background.active .contents{
     animation:appear 1s backwards ease var(--i);
-    width: 75%;
+    width: 70%;
     height: 100vh;
 }
-
+.title1{
+    width: 50rem;
+    height: 4rem;
+    display: flex;
+}
+.hamburger_bullet{
+    width: 2rem;
+    height: 4rem;
+    align-items: center;
+    display: flex;
+}
 .bullet{
     width: 0.5rem;
     height: 1.8rem;
-    background-color: white;
+    background-color: white;  
+}
+.hamburger_name{
+    font-size: 27px;
+    margin: 10px 0 0 0;
 }
 .p1{
-    padding:0 10px;
-    margin: 0 20px;
+    padding:10px 10px;
+    margin: 0 5px;
     line-height: 30px;
 }
 .image1{
     display: contents;
     padding: 20px;
-    margin: 10px;
-    background: linear-gradient( 90deg #221e3f 0%, #120510 74%);
+    margin: 5px;
+}
+
+hr{
+    opacity: 50%;
+    margin: 8rem 2.5rem 0 1rem;
+    position: relative;
+    align-items: center;
+}
+
+.education{
+    padding: 20px 70px 100px 50px;
+    margin: 20px;
+    width: 100%;
+    height: auto;
+}
+.line1:hover{
+    opacity: 50%;
+}
+.p2{
+    line-height: 30px;
+    margin: 25px;
+}
+.table1{
+    padding: 0 0 0 50px;
+    text-align: left;
+}
+
+.g5s{
+    padding: 10px;
+    margin: 25px;
+    width: 16rem;
+    height: 22rem;
+    background-color: #2c2f58;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(135deg, #6e0f55 5%, #0e3766 74%);
+}
+.ol{
+    padding: 10px;
+    margin: 25px;
+    width: 16rem;
+    height: 22rem;
+    background: linear-gradient(135deg, #6e0f55 5%, #0e3766 74%);
+    border-radius: 10px;
+    text-align: center;
+}
+.al{
+    padding: 10px;
+    margin: 25px;
+    width: 16rem;
+    height: 22rem;
+    background-color: #2c2f58;
+    border-radius: 10px;
+    text-align: center;
+    background: linear-gradient(135deg, #6e0f55 5%, #0e3766 74%);
+}
+
+.loader-fade {
+    display: flex;
+    justify-content: space-between;
+    width: 50px;
+    align-items: center;
+    margin: 0 0 0 87px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fade 1.5s infinite;
+    display: flex;
+
+}
+.dot:nth-child(1) {
+    animation-delay: 0s;
+}
+.dot:nth-child(2) {
+    animation-delay: 0.5s;
+}
+.dot:nth-child(3) {
+    animation-delay: 1s;
+}
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    50% { opacity: 1; }
+}
+
+
+.cirtification{
+    display:flex;
+    text-align: center;
+    padding: 10px 10px 10px 0;
+    margin: 10px 10px 10px 0;
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 8;
+}
+
+.image2, .image3, .image4, .image5{
+    border-radius: 5px;
+    text-align: center;
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #868181;
+    width: auto;
+    height: auto;
+    font-weight: 400;
+    font-size: 13px;
+    letter-spacing: 1px;
+    background-color: #0f2d3f;
+}
+
+.image2:hover{
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s; 
+}
+.image3:hover{
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s; 
+}
+.image4:hover{
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s; 
+}
+.image5:hover{
+    cursor: pointer;
+    background-color: transparent;
+    transition: 0.5s; 
+}
+
+.c1:hover{
+    width: 600px;
+    height: auto;
+    transition: 0.5s;
+    transform-origin: left;
+}
+.c2:hover{
+    width: 400px;
+    height: auto;
+    transition: 0.5s;
+    transform-origin: left;
+    
+}
+.c4:hover{
+    width: 600px;
+    height: auto;
+    transition: 0.5s;
+    transform-origin: left;
+}
+.c5:hover{
+    width: 600px;
+    height: auto;
+    transition: 0.5s;
+    transform-origin: right;
 }
