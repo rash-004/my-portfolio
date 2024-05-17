@@ -1,3 +1,15 @@
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
+
+function redirectToDesktopVersion() {
+    if (isMobile() && !window.location.href.includes('desktop')) {
+        window.location.href = window.location.href + '?desktop=true';
+    }
+}
+
+    redirectToDesktopVersion();
+
 const hamburger_menu = document.querySelector(".hamburger_menu");
 const background = document.querySelector(".background");
 
