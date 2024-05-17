@@ -19,3 +19,9 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+
+document.getElementById('educ').addEventListener('click', function() {
+    document.getElementById('education').scrollIntoView({
+        behavior: 'smooth'
+    });
+});
