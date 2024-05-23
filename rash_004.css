@@ -169,7 +169,7 @@ button:hover{
 
 .links{
     position: fixed;
-    width: 30%;
+    width: 25%;
     right: 0;
     top: 0;
     height: 100vh;
@@ -290,22 +290,38 @@ ul{
     transform: perspective(1400px) rotateY(20deg) translateZ(340px) scale(0.5);
 }
 
-
+.image6{
+    border-radius:50%;
+    box-shadow: 0px 0px 0px rgb(50, 32, 56), 10px 3px 8px rgb(42, 24, 43);
+}
+.profile_image{
+    margin: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    
+} 
+.me{
+    align-items: center;
+    justify-content: center;
+}   
 .about_me{
-    padding: 110px 70px 450px 50px;
+    padding: 110px 70px 100px 50px;
     margin: 20px;
     width: 100%;
     height: auto;
+    position: relative;
 }
 .background.active .contents{
     animation:appear 1s backwards ease var(--i);
     width: 70%;
-    height: 100vh;
+    height: auto;
 }
 .title1{
     width: 50rem;
     height: 4rem;
     display: flex;
+    margin: 20px 0;
 }
 .hamburger_bullet{
     width: 2rem;
@@ -319,8 +335,11 @@ ul{
     background-color: white;  
 }
 .hamburger_name{
-    font-size: 27px;
-    margin: 10px 0 0 0;
+    font-size: 40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+    font-weight: 100;
+    margin: 5px;
+    
 }
 .p1{
     padding:10px 10px;
@@ -347,6 +366,7 @@ hr{
     margin: 20px;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .p2{
@@ -504,10 +524,11 @@ hr{
 
 
 .extra, .projects, .contact{
-    padding: 120px 70px 100px 50px;
+    padding: 50px 70px 100px 50px;
     margin: 20px;
     width: 100%;
     height: auto;
+    position: relative;
 }
 .p3{
     line-height: 30px;
@@ -517,7 +538,9 @@ hr{
     margin: 10px;
     padding: 5px;
 }
-
+.p4{
+    font-size: 18px;
+}
 
 .sup{
     display: flex; 
