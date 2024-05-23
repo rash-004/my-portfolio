@@ -12,11 +12,11 @@ a{
     color: white;
 }
 a:hover{
-    opacity: 50%;
+    opacity: 50 %;
 }
 .background{
-    background-image: linear-gradient(135deg, #571144 5%, #112e4f  74%); 
-    min-height:100vh;
+    background-image: linear-gradient (135 deg, #571144 5 %, #112e4f  74 %); 
+    min-height:100 vh;
     background-color: #1c446e;
     background-repeat: no-repeat;
     overflow-x: hidden;
@@ -27,47 +27,47 @@ a:hover{
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100 %;
     z-index: 10;
-    height: 4rem;
+    height: 4 rem;
 }
 .navbar.scrolled{
-    background: linear-gradient(135deg, #571144 5%, #112e4f 74%);
+    background: linear-gradient (135 deg, #571144 5 %, #112e4f 74 %);
 }
 .menu{
-    max-width: 72rem;
-    width: 100%;
+    max-width: 72 rem;
+    width: 100 %;
     margin: 0 auto;
-    padding: 0  1rem;
+    padding: 0  1 rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: rgb(255, 255, 255);
+    color: rgb (255, 255, 255);
 
 }
 .name{
-    font-size: 70%;
+    font-size: 70 %;
 
 }
 
 
 .hamburger_menu{
-    height: 4rem;
-    width: 3rem;
+    height: 4 rem;
+    width: 3 rem;
     cursor: pointer;
     display: flex;
     align-items: center;
     justify-content:flex-end ;
-    right: 1rem;
+    right: 1 rem;
 
 
 }
 .bar{
-    width:1.9rem;
-    height: 1.5px;
-    border-radius: 2px;
-    background-color: rgb(255, 255, 255);
-    transition: .0.5s;
+    width:1.9 rem;
+    height: 1.5 px;
+    border-radius: 2 px;
+    background-color: rgb (255, 255, 255);
+    transition: .0.5 s;
     position: relative;
 }
 .bar:before, 
@@ -76,93 +76,93 @@ a:hover{
     position:absolute;
     width: inherit;
     height: inherit;
-    background-color: rgb(255, 255, 255);
-    transition: 0.5s;
+    background-color: rgb (255, 255, 255);
+    transition: 0.5 s;
 }
 .bar:before{
-    transform: translateY(-9px);
+    transform: translateY (-9 px);
 }
 .bar:after{
-    transform: translateY(9px);
+    transform: translateY (9 px);
 }
 
 
 .main{
     position: relative;
-    width: 100%;
+    width: 100 %;
     left: 0;
     z-index: 5;
     overflow: hidden;
     transform-origin: left;
     transform-style: preserve-3d ;
-    transition: 0.5s;
+    transition: 0.5 s;
 }
 header{
-    min-height: 100vh;
-    width: 100%;
+    min-height: 100 vh;
+    width: 100 %;
     position: relative;
     background: url('background 3.jpg') no-repeat top center / cover;
 }
 .overlay{
     position: absolute;
-    width: 100%;
-    height:100%;
+    width: 100 %;
+    height:100 %;
     top: 0;
     left: 0;
-    background-color: rgba(43, 51, 59, 0.8) ;
+    background-color: rgba (43, 51, 59, 0.8) ;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .inner{
-    max-width: 35rem;
+    max-width: 35 rem;
     text-align: center;
-    color: rgb(255, 255, 255);
-    padding: 0 2rem;
+    color: rgb (255, 255, 255);
+    padding: 0 2 rem;
 }
 .title{
-    font-size: 2.4rem;
+    font-size: 2.4 rem;
 }
 button{
     background-color: #1762b8;
-    color: rgb(252, 252, 252);
-    border-radius: 20px;
-    padding: 10px 50px;
-    margin: 10px;
+    color: rgb (252, 252, 252);
+    border-radius: 20 px;
+    padding: 10 px 50 px;
+    margin: 10 px;
     border:none;
-    font-size: 100%;
+    font-size: 100 %;
     cursor: pointer;
 
 }
 button:hover{
     background-color: transparent;
-    transition: 0.7s;
-    border: 1px solid rgb(204, 204, 195);
+    transition: 0.7 s;
+    border: 1 px solid rgb (204, 204, 195);
 
 }
 
 .background.active .bar{
-    transform: rotate(360deg);
+    transform: rotate (360 deg);
     background-color: transparent;
 }
 .background.active .bar:before{
-    transform: translateY(0) rotate(45deg);
+    transform: translateY (0) rotate (45 deg);
 }
 .background.active .bar:after{
-    transform: translateY(0) rotate(-45deg);
+    transform: translateY (0) rotate (-45 deg);
 }
 .background.active .main{
-    animation: main-animation 0.5s ease;
+    animation: main-animation 0.5 s ease;
     cursor: pointer;
-    transform:  perspective(1400px) rotateY(20deg) translateZ(310px) scale(0.5) ;
+    transform:  perspective (1400 px) rotateY (20 deg) translateZ (310 px) scale (0.5) ;
 }
 
 @keyframes main-animation{
     from{
-        transform: translate(0)
+        transform: translate (0)
     }
     to{
-        transform:  perspective(1400px) rotateY(20deg) translateZ(310px) scale(0.5) ; 
+        transform:  perspective (1400 px) rotateY (20 deg) translateZ (310 px) scale (0.5) ; 
     }
 }
 
