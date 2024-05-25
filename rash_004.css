@@ -15,7 +15,7 @@ a:hover{
     opacity: 50%;
 }
 .background{
-    background-image: linear-gradient(135deg, #571144 5%, #112e4f  74%); 
+    background-image: linear-gradient(135deg, #571144 5%, #112e4f  74%, #117b7bee); 
     min-height:100vh;
     background-color: #1c446e;
     background-repeat: no-repeat;
@@ -32,7 +32,7 @@ a:hover{
     height: 4rem;
 }
 .navbar.scrolled{
-    background: linear-gradient(135deg, #571144 5%, #112e4f 74%);
+    background: linear-gradient(135deg, #571144 5%, #112e4f 74%, #113c7bee);
 }
 .menu{
     max-width: 72rem;
@@ -50,6 +50,7 @@ a:hover{
 
 }
 
+/* --------------------------------------------- BAR ------------------------------------------------- */
 
 .hamburger_menu{
     height: 4rem;
@@ -59,8 +60,6 @@ a:hover{
     align-items: center;
     justify-content:flex-end ;
     right: 1rem;
-
-
 }
 .bar{
     width:1.9rem;
@@ -86,6 +85,7 @@ a:hover{
     transform: translateY(9px);
 }
 
+/* --------------------------------------------- HOME ------------------------------------------------- */
 
 .main{
     position: relative;
@@ -101,7 +101,7 @@ header{
     min-height: 100vh;
     width: 100%;
     position: relative;
-    background: url('background 3.jpg') no-repeat top center / cover;
+    background: url('background 4.jpg') no-repeat top center / cover;
 }
 .overlay{
     position: absolute;
@@ -120,7 +120,7 @@ header{
     color: rgb(255, 255, 255);
     padding: 0 2rem;
 }
-.title{
+.title1{
     font-size: 2.4rem;
 }
 button{
@@ -290,6 +290,9 @@ ul{
     transform: perspective(1400px) rotateY(20deg) translateZ(340px) scale(0.5);
 }
 
+
+/* --------------------------------------------- Profile Picture------------------------------------------------- */
+
 .image6{
     border-radius:50%;
     box-shadow: 0px 0px 0px rgb(50, 32, 56), 10px 3px 8px rgb(42, 24, 43);
@@ -304,20 +307,27 @@ ul{
 .me{
     align-items: center;
     justify-content: center;
-}   
+} 
+
+
+
 .about_me{
-    padding: 110px 70px 100px 50px;
+    padding: 110px 70px 100px 30px;
     margin: 20px;
     width: 100%;
     height: auto;
     position: relative;
 }
+
 .background.active .contents{
     animation:appear 1s backwards ease var(--i);
     width: 70%;
     height: auto;
 }
-.title1{
+
+/* ---------------------------------------------TITLE OF EVRY CONTENT------------------------------------------------- */
+
+.title2{
     width: 50rem;
     height: 4rem;
     display: flex;
@@ -338,9 +348,10 @@ ul{
     font-size: 40px;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
     font-weight: 100;
-    margin: 5px;
-    
+    margin: 5px;    
 }
+/* ------------------------------------------------------------------------------------------------------------------ */
+
 .p1{
     padding:10px 10px;
     margin: 0 5px;
@@ -362,7 +373,7 @@ hr{
 
 
 .education{
-    padding: 20px 70px 100px 50px;
+    padding: 20px 70px 100px 30px;
     margin: 20px;
     width: 100%;
     height: auto;
@@ -374,11 +385,14 @@ hr{
     margin: 25px;
 }
 .results{
-    display:inline-flex;   
-    overflow-x: auto; 
-    white-space: nowrap; 
+    display:flex;   
     width: auto; 
     height: auto;
+    position: relative;
+    z-index: 4;
+    overflow-x: auto;
+    white-space: nowrap;
+
 }
 .table1{
     padding: 0 0 0 50px;
@@ -390,7 +404,6 @@ hr{
     margin: 25px;
     width: 16rem;
     height: 22rem;
-    background-color: #2c2f58;
     border-radius: 10px;
     text-align: center;
     background: linear-gradient(135deg, #6e0f55 5%, #0e3766 74%);
@@ -419,7 +432,7 @@ hr{
     justify-content: space-between;
     width: 50px;
     align-items: center;
-    margin: 0 0 0 87px;
+    margin: 0 0 0 40%;
 }
 
 .dot {
@@ -524,7 +537,7 @@ hr{
 
 
 .extra, .projects, .contact{
-    padding: 50px 70px 100px 50px;
+    padding: 50px 70px 80px 30px;
     margin: 20px;
     width: 100%;
     height: auto;
@@ -541,6 +554,28 @@ hr{
 .p4{
     font-size: 18px;
 }
+
+.p5{
+    width: 100%;
+    height: auto;
+    margin: 30px;
+    padding: 5px;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.li4{
+    display: grid;
+    margin: 20px;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 100;
+}
+.li4:hover{
+    cursor: pointer;
+    opacity: 75%;
+}
+
 
 .sup{
     display: flex; 
@@ -564,3 +599,4 @@ hr{
     border: 1px solid rgb(204, 204, 195);
     background-color: transparent;
 }
+
